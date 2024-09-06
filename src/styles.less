@@ -1,1 +1,151 @@
 /* You can add global styles to this file, and also import other style files */
+// =========== declear font ================
+// @import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap") ;
+//============ declear variable ===========
+@primary-color: #B52E21;
+@secondary-color: #332E2B;
+@white-text: #FFFFFF;
+@bg-secondary: #F5F5F5;
+@bg-white: #ffffff;
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box !important;
+    font-family: "Inika", serif !important;
+
+}
+
+body {
+    position: relative !important;
+    overflow-x: hidden !important;
+}
+
+.header {
+    z-index: 100 !important;
+    top: 0px;
+    position: fixed !important;
+}
+
+//================ header =================
+
+// .head-contain{
+//      background-color: rgba(128, 128, 128, 0.13);
+// }
+.img img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.menu {
+
+    position: relative;
+
+    .main-menu {
+
+        width: 200px;
+        height: 60px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        overflow: hidden;
+        position: relative;
+        background-color: @bg-white;
+
+        .mn-style {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background-color: @primary-color;
+            transform: rotate(45deg);
+        }
+
+        .mn-one {
+            left: -54px;
+        }
+
+        .mn-two {
+            right: -54px;
+        }
+    }
+
+    .sub-menu {
+        position: absolute;
+        visibility: hidden;
+        overflow: hidden !important;
+
+        .sub {
+            width: 200px;
+            height: 60px;
+
+            overflow: hidden;
+            position: relative;
+            right: -100%;
+            margin-top: 10px;
+            background-color: @bg-white;
+
+            .sub-style {
+                position: absolute;
+                width: 70px;
+                height: 70px;
+                background-color: #332e2b83;
+                transform: rotate(45deg);
+            }
+
+            .sub-one {
+                left: -54px;
+            }
+
+            .sub-two {
+                right: -54px;
+            }
+        }
+
+        .sub:hover {
+
+            cursor: pointer !important;
+
+            .sub-style {
+                background-color: @primary-color !important;
+            }
+        }
+
+        .sub:nth-child(1) {
+            transition: all 80ms ease-in;
+
+        }
+
+        .sub:nth-child(2) {
+            transition: all 130ms ease-in;
+
+        }
+
+        .sub:nth-child(3) {
+            transition: all 180ms ease-in;
+
+        }
+
+        .sub:nth-child(4) {
+            transition: all 230ms ease-in;
+            margin-bottom: 15px !important;
+
+        }
+
+        .sub:nth-child(5) {
+            transition: all 280ms ease-in;
+        }
+    }
+}
+
+.menu:hover {
+    .sub-menu {
+        visibility: visible;
+
+        .sub {
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            right: 0px;
+        }
+    }
+}
+
+// =============== home ============

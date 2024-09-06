@@ -1,0 +1,632 @@
+@primary-color: #B52E21;
+@secondary-color: #332E2B;
+@white-text: #FFFFFF;
+@bg-secondary: #F5F5F5;
+@bg-white: #ffffff;
+
+
+
+.top-contain {
+    width: 100%;
+    height: 50vh;
+
+}
+
+
+.swiper {
+    width: 35rem;
+    height: 22rem;
+    border-radius: 22px;
+    box-shadow: rgba(17, 17, 26, 0.247) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.185) 0px 16px 56px !important;
+
+    img {
+
+        width: 35rem;
+        height: 22rem;
+        border-radius: 22px;
+        object-fit: cover;
+    }
+}
+
+.text-top:nth-child(1) {
+    font-size: 4rem;
+    font-weight: 600;
+    color: @secondary-color;
+}
+
+.text-top:nth-child(2) {
+    font-size: 5rem;
+    font-weight: 600;
+    color: @primary-color;
+}
+
+.text-top:nth-child(3) {
+    font-size: 3rem;
+    font-weight: 600;
+    color: @secondary-color;
+}
+
+//===
+.home-body {
+    background-color: @bg-secondary;
+
+
+    .text-aga {
+        font-size: 2.5rem;
+        font-weight: 550;
+        color: @secondary-color;
+
+        span {
+            color: @primary-color;
+        }
+    }
+
+
+    .aga-content {
+
+        .img-one {
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                border-top-left-radius: 14px;
+            }
+        }
+
+        .img-two {
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                border-bottom-left-radius: 14px;
+            }
+        }
+
+        .img-three {
+            img {
+                width: 100%;
+                height: 507px;
+                object-fit: cover;
+                border-bottom-right-radius: 14px;
+                border-top-right-radius: 14px;
+            }
+        }
+    }
+
+    .home-whorship {
+        height: 35rem !important;
+        object-fit: cover;
+        border-radius: 14px;
+        z-index: 1;
+    }
+
+    .whorship {
+        position: absolute;
+        width: 97.5%;
+        height: 35rem !important;
+        border-radius: 14px;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.548) !important;
+        z-index: 4;
+    }
+
+    .whorship-text {
+        width: 100%;
+        position: absolute;
+        top: 15%;
+        color: @white-text;
+        z-index: 6;
+
+        .whor-header {
+            width: 600px;
+        }
+
+        .text-head {
+            font-size: 2.3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.829);
+        }
+
+        .text-dsc {
+            font-size: 1.2rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.829);
+        }
+    }
+
+    .user {
+        width: 100%;
+        height: 70vh !important;
+
+        img {
+            height: 60vh !important;
+            width: 220px;
+            object-fit: cover;
+            border-radius: 14px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        }
+    }
+}
+
+.home-body-card {
+    background-color: @bg-white;
+
+    .card-img {
+        height: 350px;
+        object-fit: cover;
+        border-radius: 18px;
+        box-shadow: rgba(17, 17, 26, 0.233) 0px 0px 16px;
+    }
+}
+
+
+// ======== rsopnsive ========
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .body-content {
+        width: 100vw !important;
+    }
+
+    .user-small-pd-one {
+        padding: 30rem 0rem 30rem 0rem !important;
+        width: 55% !important;
+    }
+
+    .top-contain {
+        width: 100%;
+        height: 75vh !important;
+
+        .top-slide {
+            margin-left: 12px !important;
+            justify-content: center !important;
+        }
+
+        .top-text {
+            justify-content: center !important;
+        }
+    }
+
+    .w-small {
+        width: 400px !important;
+    }
+
+    .sm-whoship {
+        width: 100vw !important;
+    }
+
+    .home-whorship {
+        height: 30rem !important;
+        width: 100vw !important;
+        object-fit: cover;
+        border-radius: 14px;
+        z-index: 1;
+    }
+
+    .whorship {
+        position: absolute;
+        width: 100vw !important;
+        height: 30rem !important;
+        border-radius: 14px;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.548) !important;
+        z-index: 4;
+    }
+
+    .whorship-text {
+
+        width: 100vw;
+        position: absolute;
+        top: 15%;
+        color: @white-text;
+        z-index: 6;
+
+        .whor-header {
+            width: 100vw !important;
+        }
+    }
+
+
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+
+    .top-contain {
+        width: 100%;
+        height: 75vh !important;
+
+        .top-slide {
+            justify-content: center !important;
+        }
+
+        .top-text {
+            justify-content: center !important;
+        }
+    }
+
+    .swiper {
+        width: 25rem !important;
+        height: 20rem;
+
+        img {
+
+            width: 25rem !important;
+            height: 20rem;
+        }
+    }
+
+    .text-top:nth-child(1) {
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    .text-top:nth-child(2) {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    .text-top:nth-child(3) {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .home-body {
+        background-color: @bg-secondary;
+
+
+        .text-aga {
+            font-size: 1.5rem !important;
+            font-weight: 550;
+            color: @secondary-color;
+
+            span {
+                color: @primary-color;
+            }
+        }
+    }
+
+    .aga-content {
+
+        .img-one {
+            width: 100% !important;
+
+            img {
+                width: 100vw !important;
+                height: 250px;
+                border-top-left-radius: 0px !important;
+            }
+        }
+
+        .img-two {
+            width: 100% !important;
+
+            img {
+                width: 100vw !important;
+                height: 250px;
+                border-top-right-radius: 0px !important;
+                border-bottom-left-radius: 0px !important;
+            }
+        }
+
+        .img-three {
+            width: 100% !important;
+
+            img {
+                width: 100vw !important;
+                height: 507px;
+                border-top-right-radius: 0px !important;
+                border-bottom-right-radius: 0px !important;
+                border-bottom-left-radius: 0px !important;
+            }
+        }
+    }
+
+    .home-body {
+        .user-small-pd {
+            padding: 0rem !important;
+            width: 100vh !important;
+        }
+
+        .user {
+            width: 100%;
+            height: 65vh !important;
+            margin-bottom: 40px !important;
+            box-sizing: border-box !important;
+
+            .user-small {
+                display: flex !important;
+                justify-content: center !important;
+            }
+
+            img {
+                height: 55vh !important;
+                width: 100vw !important;
+                object-fit: cover;
+                border-radius: 14px;
+                margin-bottom: 12px !important;
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+            }
+
+            padding-bottom: 12px !important;
+        }
+    }
+
+    .home-whorship {
+        height: 30rem !important;
+        width: 100vw !important;
+        object-fit: cover;
+        border-radius: 14px;
+        z-index: 1;
+    }
+
+    .whorship {
+        position: absolute;
+        width: 100vw !important;
+        height: 30rem !important;
+        border-radius: 14px;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.548) !important;
+        z-index: 4;
+    }
+
+    .whorship-text {
+        width: 100vw;
+        position: absolute;
+        top: 15%;
+        color: @white-text;
+        z-index: 6;
+
+        .whor-header {
+            width: 100vw !important;
+        }
+    }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .top-contain {
+        width: 100%;
+        height: 75vh !important;
+
+        .top-slide {
+            justify-content: center !important;
+        }
+
+        .top-text {
+            justify-content: center !important;
+        }
+    }
+
+
+    .swiper {
+        width: 30rem;
+        height: 20rem;
+
+        img {
+
+            width: 30rem;
+            height: 20rem;
+        }
+    }
+
+    .text-top:nth-child(1) {
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    .text-top:nth-child(2) {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    .text-top:nth-child(3) {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    //==
+
+    .aga-content {
+
+        .img-one {
+            img {
+                height: 250px;
+                border-top-left-radius: 14px;
+            }
+        }
+
+        .img-two {
+            img {
+
+                height: 250px;
+                border-top-right-radius: 14px;
+                border-bottom-left-radius: 0px !important;
+            }
+        }
+
+        .img-three {
+            img {
+                height: 507px;
+                border-top-right-radius: 0px !important;
+                border-bottom-right-radius: 14px;
+                border-bottom-left-radius: 14px;
+            }
+        }
+    }
+
+    .home-body {
+        .user-small-pd {
+            padding: 15rem !important;
+            width: 50px !important;
+        }
+
+        .user {
+            width: 100%;
+            height: 65vh !important;
+
+            .user-small {
+                display: flex !important;
+                justify-content: center !important;
+            }
+
+            img {
+                height: 55vh;
+                width: 300px !important;
+                object-fit: cover;
+                border-radius: 14px;
+                margin-bottom: 12px !important;
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+            }
+
+            padding-bottom: 12px !important;
+        }
+    }
+
+    .home-whorship {
+        height: 30rem !important;
+        object-fit: cover;
+        border-radius: 14px;
+        z-index: 1;
+    }
+
+    .whorship {
+        position: absolute;
+        width: 96.5%;
+
+        height: 30rem !important;
+        border-radius: 14px;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.548) !important;
+        z-index: 4;
+    }
+
+    .whorship-text {
+
+        .whor-header {
+            width: 500px;
+        }
+    }
+}
+
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .top-contain {
+        width: 100%;
+        height: 50vh;
+
+    }
+
+
+    .swiper {
+        width: 30rem;
+        height: 20rem;
+
+        img {
+
+            width: 30rem;
+            height: 20rem;
+        }
+    }
+
+    .text-top:nth-child(1) {
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    .text-top:nth-child(2) {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    .text-top:nth-child(3) {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    //==
+    .home-body {
+        background-color: @bg-secondary;
+
+
+        .text-aga {
+            font-size: 2rem;
+            font-weight: 550;
+            color: @secondary-color;
+
+            span {
+                color: @primary-color;
+            }
+        }
+
+        .user {
+            width: 100%;
+            height: 65vh !important;
+
+            img {
+                height: 55vh !important;
+                width: 200px;
+                object-fit: cover;
+                border-radius: 14px;
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+            }
+        }
+    }
+
+    .home-whorship {
+        height: 32rem !important;
+        object-fit: cover;
+        border-radius: 14px;
+        z-index: 1;
+    }
+
+    .whorship {
+        position: absolute;
+        width: 97%;
+        height: 32rem !important;
+        border-radius: 14px;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.548) !important;
+        z-index: 4;
+    }
+}
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+    .user {
+        width: 100%;
+        height: 65vh !important;
+
+        img {
+            height: 55vh !important;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 14px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        }
+    }
+}
+
+@media (min-width: 1499.98px) {
+
+    .user {
+        width: 100%;
+        height: 65vh !important;
+
+        .user-small {
+            display: flex !important;
+            justify-content: center !important;
+        }
+
+        img {
+            height: 55vh;
+            width: 250px !important;
+            object-fit: cover;
+            border-radius: 14px;
+            margin-bottom: 12px !important;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        }
+
+        padding-bottom: 12px !important;
+    }
+}

@@ -1,1 +1,83 @@
-<p>worshipteam works!</p>
+<div class="top-contain position-relative">
+    <div class="top-img position-relative">
+        <img src="../../../../assets/worship/header/bgtop.jpg" alt="">
+        <div class="img-bg"></div>
+    </div>
+
+    <div class="row top-card d-flex justify-content-center">
+        <div class="top-text text-center">
+            Worship In AGA Youth Event
+        </div>
+        <div class="p-xl-4 p-lg-4 p-md-4 p-2"></div>
+        <div class="col-xl-9 col-lg-10 col-md-10 col-12 row user ps-md-4">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4  col-6 p-1  d-flex justify-content-center"><img
+                    src="../../../../assets/worship/header/cart1.jpg" alt="">
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 p-1  d-flex justify-content-center"><img
+                    src="../../../../assets/worship/header/cart2.jpg" alt="">
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4  col-sm-4 col-6 p-1 user-1  d-flex justify-content-center"><img
+                    src="../../../../assets/worship/header/cart3.jpg" alt="">
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-12 p-1 user-2  d-flex justify-content-center"><img
+                    src="../../../../assets/worship/header/cart4.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@for(url of contain; track $index){
+@if($index%2==0){
+<div class="home-body-card row d-flex justify-content-center">
+    <div class="p-xl-5 p-lg-5 p-md-5"></div>
+
+    <div class="col-xl-8 col-lg-10 col-md-10">
+        <div class="row buttom-card ">
+            <div class="col-xl-5 col-lg-6 col-md-12 p-0 ">
+                <img class="buttom-card-image" src="{{url}}" alt="" srcset="">
+            </div>
+            <div class="col-xl-7 col-lg-6 col-md-12  d-flex flex-column align-items-center">
+                <div class="card-head pb-xl-4 pb-lg-2 pb-md-2 pt-md-4 pt-lg-2">Love in Jesus</div>
+                <div class="card-text text-center p-4">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="p-xl-5 p-lg-5 p-md-5 p-2"></div>
+</div>
+}@else{
+<div class="home-body-card row d-flex justify-content-center">
+    <div class="p-xl-5 p-lg-5 p-md-5 p-0"></div>
+
+    <div class="col-xl-8 col-lg-10 col-md-10">
+        <div class="row buttom-card ">
+
+            <div class="col-xl-7 col-lg-6 col-md-12  d-flex flex-column align-items-center">
+                <div class="card-head pb-xl-4 pb-lg-2 pb-md-2 ">Love in Jesus</div>
+                <div class="card-text text-center p-4">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book.
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6 col-md-12 p-0 pt-md-4 pt-lg-2">
+                <img class="buttom-card-image" src="{{url}}" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="p-xl-5 p-lg-5 p-md-5 p-2"></div>
+</div>
+}
+}

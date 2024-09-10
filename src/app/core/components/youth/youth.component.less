@@ -1,0 +1,130 @@
+@primary-color: #B52E21;
+@secondary-color: #332E2B;
+@white-text: #FFFFFF;
+@bg-secondary: #F5F5F5;
+@bg-white: #ffffff;
+
+.top-contain {
+    width: 100%;
+    height: 100vh;
+
+    .top-img {
+        width: 100%;
+        height: 70vh;
+
+        img {
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
+        }
+
+        .img-bg {
+            width: 100%;
+            height: 70vh;
+            position: absolute;
+            top: 0px;
+            background-color: rgba(26, 25, 25, 0.692);
+        }
+    }
+}
+
+.top-text {
+    width: 100%;
+    font-size: 2.9rem;
+    font-weight: 600;
+    color: @bg-white;
+}
+
+.top-card {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+
+    .user {
+        height: 65vh !important;
+
+        img {
+            height: 60vh !important;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 14px;
+            box-shadow: #B52E21 0px 0px 5px;
+        }
+    }
+}
+
+
+.home-whorship {
+    height: 30rem !important;
+    object-fit: cover;
+    border-radius: 14px;
+    z-index: 1;
+    width: 100%;
+}
+
+.whorship {
+    position: absolute;
+    width: 100%;
+    height: 30rem !important;
+    border-radius: 14px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.548) !important;
+    z-index: 4;
+}
+
+.whorship-text {
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    color: @white-text;
+    z-index: 6;
+
+    .whor-header {
+        width: 600px;
+    }
+
+    .text-head {
+        font-size: 2.3rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.829);
+    }
+
+    .text-dsc {
+        font-size: 1.2rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.829);
+    }
+}
+
+.home-body-card {
+    background-color: @bg-secondary;
+
+    .card-img {
+        height: 350px;
+        object-fit: cover;
+        border-radius: 18px;
+        box-shadow: rgba(17, 17, 26, 0.233) 0px 0px 16px;
+    }
+
+    .card-head {
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: @primary-color;
+    }
+
+    .card-text {
+        font-size: 1.3rem;
+        color: @secondary-color;
+    }
+
+    .buttom-card {
+        border-radius: 14px;
+
+        .buttom-card-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 14px;
+            box-shadow: #b52d215e 2.95px 3.95px 7.6px;
+        }
+    }
+
+}

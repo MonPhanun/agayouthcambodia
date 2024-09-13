@@ -9,40 +9,50 @@
             AGA Youth Event
         </div>
         <div class="p-xl-4 p-lg-4 p-md-4 p-2"></div>
-        <div class="col-xl-9 col-lg-10 col-md-10 col-12 row user ps-md-4">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-2 top-img1 d-flex justify-content-center"><img
-                    src="../../../../assets/band/header/head1.jpg" alt="">
-            </div>
+        <swiper-container [loop]="true" autoplay="true" [autoplay]="{ delay: 4500 }">
+            @for (url of slide; track url){
+            <swiper-slide class="d-flex justify-content-center">
+                <div class="col-xl-9 col-lg-10 col-md-10 col-12 row user ps-md-4">
+                    <div
+                        class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-2 top-img1 d-flex justify-content-center">
+                        <img src="{{url}}" alt="">
+                    </div>
 
-        </div>
+                </div>
+            </swiper-slide>
+            }
+        </swiper-container>
     </div>
 </div>
-
+@for (url of content; track $index){
+@if($index%2 ==0){
 <div class="home-body-card row d-flex justify-content-center">
-    <div class="p-xl-5 p-lg-5 p-md-5"></div>
+    <div class="p-xl-4 p-lg-4 p-md-4 p-4"></div>
 
     <div class="col-xl-8 col-lg-10 col-md-10">
         <div class="row buttom-card ">
-            <div class="col-xl-5 col-lg-6 col-md-12 p-0 ">
-                <img class="buttom-card-image" src="../../../../assets/youth/content/content1.jpg" alt="" srcset="">
-            </div>
-            <div class="col-xl-7 col-lg-6 col-md-12  d-flex flex-column align-items-center">
-                <div class="card-head pb-xl-4 pb-lg-2 pb-md-2 pt-md-4 pt-lg-2">Love in Jesus</div>
-                <div class="card-text text-center p-4">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                    has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book.
-                </div>
+            <div class="col-xl-5 col-lg-6 col-md-12 p-0 " data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <img class="buttom-card-image" src="{{url}}" alt="" srcset="">
             </div>
         </div>
     </div>
+    <div class="p-xl-5 p-lg-5 p-md-5 p-4"></div>
+</div>
+}@else{
+<div class="home-body-card row d-flex justify-content-center">
+    <div class="p-xl-5 p-lg-5 p-md-5 p-3"></div>
 
-
+    <div class="col-xl-8 col-lg-10 col-md-10">
+        <div class="row buttom-card d-flex justify-content-end">
+            <div class="col-xl-5 col-lg-6 col-md-12 p-0 " data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <img class="buttom-card-image" src="{{url}}" alt="" srcset="">
+            </div>
+        </div>
+    </div>
     <div class="p-xl-5 p-lg-5 p-md-5 p-2"></div>
 </div>
-
+}
+}
 <div class="row d-flex justify-content-center">
     <div class="col-xl-8 col-lg-10 col-md-10 pt-5 pb-5">
         <div class="body-content pt-5 pb-5">

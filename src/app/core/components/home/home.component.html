@@ -1,9 +1,9 @@
 <div class="p-xl-5 p-lg-5 p-md-4 p-4"></div>
 <div class="p-xl-5 p-lg-5 p-md-4 p-4"></div>
-<div class="container">
+<div class="container ">
   <div class="top-contain row">
     <div class="col-xl-7 col-lg-7 top-slide d-flex justify-content-end align-items-center">
-      <div class="swiper">
+      <div class="swiper" data-aos="fade-right" data-aos-duration="1300">
         <swiper-container [loop]="true" autoplay="true">
           @for (url of slide; track url){
           <swiper-slide>
@@ -14,7 +14,8 @@
       </div>
     </div>
     <div class="col-xl-5 col-lg-5 pe-xl-5 pe-lg-5 d-flex flex-column justify-content-center align-items-center">
-      <div class="pe-xl-5 pe-lg-5 p-md-4 top-text d-flex flex-column justify-content-center align-items-center">
+      <div data-aos="fade-left" data-aos-duration="1300"
+        class="pe-xl-5 pe-lg-5 p-md-4 top-text d-flex flex-column justify-content-center align-items-center">
         <div class="text-top">Welcome !</div>
         <div class="text-top">AGC</div>
         <div class="text-top">Youth</div>
@@ -29,14 +30,14 @@
 </div>
 <div class="home-body row d-flex justify-content-center">
   <div class="col-xl-8 col-lg-10 col-md-10">
-    <div class="body-content">
-      <div class="p-4 d-flex justify-content-center align-items-center">
+    <div class="body-content ">
+      <div data-aos="zoom-in" data-aos-duration="1300" class="p-4 d-flex justify-content-center align-items-center">
         <div class="text-aga">Amazing Grace Church ( <span>AGC</span> )</div>
       </div>
 
       <div class="row aga-content w-small">
         <div class="col-xl-6 col-lg-6 p-0 ps-md-1 w-small m-0">
-          <div class="row p-1 w-small">
+          <div data-aos="fade-right" data-aos-duration="1300" class="row p-1 w-small">
             <div class="img-one col-12 p-1 col-xl-12 col-lg-12 col-md-6 col-sm-12">
               <img src="../../../../assets/home/content/content1.jpg" alt="" srcset="">
             </div>
@@ -45,7 +46,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-6 col-12 col-sm-12  col-lg-6 p-0 ps-1 w-small">
+        <div data-aos="fade-left" data-aos-duration="1300" class="col-xl-6 col-12 col-sm-12  col-lg-6 p-0 ps-1 w-small">
           <div class="img-three p-2 ps-2">
             <img src="../../../../assets/home/content/content2.jpg" alt="" srcset="">
           </div>
@@ -55,7 +56,7 @@
       <div class="p-xl-5 p-lg-5 p-md-5 p-4 sm-whoship"></div>
       <div class="p-xl-4 p-lg-4 p-md-4 p-2 sm-whoship"></div>
       <div class="row d-flex justify-content-center align-items-center sm-whoship">
-        <div class="col-12 position-relative sm-whoship">
+        <div data-aos="zoom-out-up" data-aos-duration="1300" class="col-12 position-relative sm-whoship">
           <img class="home-whorship" src="../../../../assets/home/content/content4.jpg" width="100%" alt="">
           <div class="whorship"></div>
           <div class="whorship-text d-flex justify-content-center">
@@ -79,16 +80,20 @@
       <div class="p-xl-5 p-lg-5 p-md-5 p-4"></div>
       <div class="p-xl-4 p-lg-4 p-md-4 p-2"></div>
       <div class="row user ps-md-4">
-        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 p-1 user-small"><img
+        <div data-aos="fade-up" data-aos-duration="1300"
+          class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 p-1 user-small"><img
             src="../../../../assets/home/content/user1.jpg" alt="">
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 p-1 user-small"><img
+        <div data-aos="fade-down" data-aos-duration="1300"
+          class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 p-1 user-small"><img
             src="../../../../assets/home/content/user2.jpg" alt="">
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 p-1 user-small"><img
+        <div data-aos="fade-up" data-aos-duration="1300"
+          class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 p-1 user-small"><img
             src="../../../../assets/home/content/user3.jpg" alt="">
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 p-1 user-small"><img
+        <div data-aos="fade-down" data-aos-duration="1300"
+          class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 p-1 user-small"><img
             src="../../../../assets/home/content/user4.jpg" alt="">
         </div>
 
@@ -103,9 +108,12 @@
   <div class="p-xl-5 p-lg-5 p-md-5"></div>
   <div class="col-xl-8 col-lg-10 col-md-10">
     <div class="row">
-      <div class="col-xl-6 col-lg-7 pt-md-4"><img class="card-img" src="../../../../assets/home/content/love.jpg" alt=""
-          srcset=""></div>
-      <div class="col-xl-6 col-lg-5 d-flex flex-column align-items-center">
+      <div data-aos="fade-right" data-aos-duration="1200" data-aos-offset="200" data-aos-easing="ease-in-sine"
+        class="col-xl-6 col-lg-7 pt-md-4">
+        <img class="card-img" src="../../../../assets/home/content/love.jpg" alt="" srcset="">
+      </div>
+      <div data-aos="fade-left" data-aos-offset="200" data-aos-duration="1200" data-aos-easing="ease-in-sine"
+        class="col-xl-6 col-lg-5 d-flex flex-column align-items-center">
         <div class="card-head pb-xl-4 pb-lg-2 pb-md-2 pt-md-4">Love in Jesus</div>
         <div class="card-text text-center p-2">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -128,7 +136,8 @@
   <div class="col-xl-8 col-lg-10 col-md-10">
     <div class="row">
       @for(url of society; track url){
-      <div class="col-xl-3 col-lg-3 col-md-6 d-flex justify-content-center align-items-center p-2">
+      <div data-aos="flip-left" data-aos-duration="1300"
+        class="col-xl-3 col-lg-3 col-md-6 d-flex justify-content-center align-items-center p-2">
         <img src="{{url}}" alt="" srcset="">
       </div>
       }
@@ -138,7 +147,8 @@
 </div>
 <div class="home-body-card row d-flex justify-content-center">
   <div class="p-xl-5 p-lg-5 p-md-5"></div>
-  <swiper-container autoplay="true" [loop]="true" [slidesPerView]="1" [autoplay]="{ delay: 6000 }">
+  <swiper-container data-aos="zoom-in-up" data-aos-duration="1100" autoplay="true" [loop]="true" [slidesPerView]="1"
+    [autoplay]="{ delay: 6000 }">
     @for (url of bottom; track url){
     <swiper-slide class="p-3 d-flex justify-content-center">
       <div class="col-xl-8 col-lg-10 col-md-10">
@@ -163,7 +173,3 @@
 
   <div class="p-xl-5 p-lg-5 p-md-5"></div>
 </div>
-<div class="p-xl-5 p-lg-5 bg-primary"></div>
-<div class="p-xl-3 p-lg-3"></div>
-<div class="p-xl-5 p-lg-5"></div>
-<div class="p-xl-3 p-lg-3"></div>

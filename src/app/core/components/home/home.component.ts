@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, HostListener, inject, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +11,9 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor() {
+
+  }
   slide = [
     "../../../../assets/home/slide/slide.jpg",
     "../../../../assets/home/slide/slide1.jpg",

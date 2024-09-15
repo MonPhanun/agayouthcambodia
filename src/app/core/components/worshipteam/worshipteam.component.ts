@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-worshipteam',
@@ -21,4 +21,6 @@ export class WorshipteamComponent {
     "../../../../assets/worship/content/content9.jpg",
     "../../../../assets/worship/content/content10.jpg",
   ]
+
+
 }

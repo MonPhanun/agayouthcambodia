@@ -4,7 +4,7 @@
   <div class="top-contain row">
     <div class="col-xl-7 col-lg-7 top-slide d-flex justify-content-end align-items-center">
       <div class="swiper" data-aos="fade-right" data-aos-duration="1300">
-        <swiper-container [loop]="true" autoplay="true">
+        <swiper-container effect="coverflow" parallax="true" speed="1500" [loop]="true" autoplay="true">
           @for (url of slide; track url){
           <swiper-slide>
             <img [src]="url" alt="" srcset="" />

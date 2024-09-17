@@ -1,4 +1,5 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, OnDestroy } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnDestroy, OnInit } from '@angular/core';
+import { SignalServiceService } from '../../services/signal-service.service';
 
 @Component({
   selector: 'app-youth',
@@ -8,7 +9,12 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, OnDestroy } from '@angular/core';
   styleUrl: './youth.component.less',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class YouthComponent {
+export class YouthComponent implements OnInit {
+
+  constructor(private signal: SignalServiceService) { }
+  ngOnInit(): void {
+    this.signal.setHeader('Youth')
+  }
 
   slide = [
     "../../../../assets/youth/header/slide1.jpg",

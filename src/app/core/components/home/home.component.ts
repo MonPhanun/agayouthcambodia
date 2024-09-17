@@ -1,4 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, HostListener, inject, OnDestroy, OnInit } from '@angular/core';
+import { SignalServiceService } from '../../services/signal-service.service';
 
 @Component({
   selector: 'app-home',
@@ -9,11 +10,15 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, HostListener, inject, OnDestroy, OnI
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-  constructor() {
+  constructor(private signal: SignalServiceService) { }
 
+  ngOnInit(): void {
+    this.signal.setHeader('Home')
   }
+
+
   slide = [
     "../../../../assets/home/slide/slide.jpg",
     "../../../../assets/home/slide/slide1.jpg",

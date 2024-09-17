@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SignalServiceService } from '../../services/signal-service.service';
 
 @Component({
   selector: 'app-worshipteam',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './worshipteam.component.html',
   styleUrl: './worshipteam.component.less'
 })
-export class WorshipteamComponent {
+export class WorshipteamComponent implements OnInit {
+
+  constructor(private signal: SignalServiceService) { }
+  ngOnInit(): void {
+    this.signal.setHeader('Worship')
+  }
 
   contain = [
     "../../../../assets/worship/content/content1.jpg",

@@ -10,52 +10,32 @@
         <div class="mn-style mn-two"></div>
       </div>
       <div class="sub-menu">
-        <div
-          routerLink="/"
-          *ngIf="activeMenu != 'Home'"
-          (click)="navigation('Home')"
-          class="sub d-flex align-items-center justify-content-center"
-        >
+        <div routerLink="/" *ngIf="activeMenu != 'Home'" (click)="navigation('Home')"
+          class="sub d-flex align-items-center justify-content-center">
           <div class="sub-style sub-one"></div>
           <div>Home</div>
           <div class="sub-style sub-two"></div>
         </div>
-        <div
-          routerLink="/team"
-          *ngIf="activeMenu != 'Worship Team'"
-          (click)="navigation('Worship Team')"
-          class="sub d-flex align-items-center justify-content-center"
-        >
+        <div routerLink="/team" *ngIf="activeMenu != 'Worship'" (click)="navigation('Worship')"
+          class="sub d-flex align-items-center justify-content-center">
           <div class="sub-style sub-one"></div>
-          <div>Worship Team</div>
+          <div>Worship</div>
           <div class="sub-style sub-two"></div>
         </div>
-        <div
-          routerLink="band"
-          *ngIf="activeMenu != 'Worship Band'"
-          (click)="navigation('Worship Band')"
-          class="sub d-flex align-items-center justify-content-center"
-        >
+        <div routerLink="band" *ngIf="activeMenu != 'Worship Band'" (click)="navigation('Worship Band')"
+          class="sub d-flex align-items-center justify-content-center">
           <div class="sub-style sub-one"></div>
           <div>Worship Band</div>
           <div class="sub-style sub-two"></div>
         </div>
-        <div
-          routerLink="youth"
-          *ngIf="activeMenu != 'Youth'"
-          (click)="navigation('Youth')"
-          class="sub d-flex align-items-center justify-content-center"
-        >
+        <div routerLink="youth" *ngIf="activeMenu != 'Youth'" (click)="navigation('Youth')"
+          class="sub d-flex align-items-center justify-content-center">
           <div class="sub-style sub-one"></div>
           <div>Youth</div>
           <div class="sub-style sub-two"></div>
         </div>
-        <div
-          routerLink="contact"
-          *ngIf="activeMenu != 'Contact'"
-          (click)="navigation('Contact')"
-          class="sub d-flex align-items-center justify-content-center"
-        >
+        <div routerLink="contact" *ngIf="activeMenu != 'Contact'" (click)="navigation('Contact')"
+          class="sub d-flex align-items-center justify-content-center">
           <div class="sub-style sub-one"></div>
           <div>Contact</div>
           <div class="sub-style sub-two"></div>
